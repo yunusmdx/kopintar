@@ -92,16 +92,26 @@ body {
     right: 7%;
     background-color: white;
     width: 35rem;
-    height: 3rem;
+    height: 4rem;
     display: flex;
     align-items: center;
-    transform: scaleY(0);
+    transform: scaleY(0); 
     transform-origin: top;
     transition: 0.3s;
+    border: solid;
+    border-radius: 0.7rem;
 }
 
-.navbar .search-form .active {
+.navbar .search-form.active {
     transform: scaleY(1);
+}
+
+.navbar .search-form input {
+    height: 100%;
+    width: 100%;
+    font-size: 1.3rem;
+    color: var(--bg);
+    padding: 1rem;
 }
 
 .navbar .search-form label {
@@ -109,14 +119,6 @@ body {
     font-size: 2rem;
     margin-right: 1.5rem;
     color: var(--bg);
-}
-
-.navbar .search-form input {
-    height: 100%;
-    width: 100%;
-    font-size: 1.5rem;
-    color: var(--bg);
-    padding: 1rem;
 }
 
 /* hero section */
