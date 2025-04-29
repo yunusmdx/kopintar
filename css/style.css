@@ -65,7 +65,7 @@ body {
     padding-bottom: 0.5rem;
     border-bottom: 0.1rem solid var(--primary);
     transform: scaleX(0);
-    transition: 0.2s linear;
+    transition: 0.3s linear;
 }
 
 .navbar .navbar-nav a:hover::after {
@@ -186,12 +186,14 @@ body {
 /* about section */
 .about,
 .menu,
+.products,
 .contact {
     padding: 7rem 7% 1.4rem;
 }
 
 .about h2,
 .menu h2,
+.products h2,
 .contact h2 {
     text-align: center;
     font-size: 2.6rem;
@@ -200,6 +202,7 @@ body {
 
 .about h2 span,
 .menu h2 span,
+.products h2 span,
 .contact h2 span {
     color: var(--primary);
 }
@@ -244,6 +247,7 @@ body {
 }
 
 .menu p,
+.products p,
 .contact p {
     text-align: center;
     max-width: 35rem;
@@ -272,6 +276,12 @@ body {
 
 .menu .row .menu-card .menu-card-title {
     margin: 1rem auto 0.5rem;
+}
+
+/* products section */
+.products .row {
+    display: grid;
+    grid-template-columns: ;
 }
 
 /* contact section */
@@ -386,6 +396,7 @@ footer .sosials p {
 @media (max-width: 768px) {
     html {
         font-size: 62.5%;
+        text-align: center;
     }
 
     #hamburger-menu {
@@ -420,6 +431,11 @@ footer .sosials p {
 
     .navbar .navbar-nav a:hover::after {
         transform: scaleX(0.2);
+    }
+
+    .navbar .search-form {
+        width: 90%;
+        right: 2rem;
     }
 
     .about .row {
