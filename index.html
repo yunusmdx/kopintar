@@ -19,6 +19,13 @@
 
     <!-- feather icons -->
     <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- alpineJS -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+    <!-- app -->
+     <script src="src/app.js"></script>
+
   </head>
 
   <body>
@@ -36,7 +43,9 @@
 
       <div class="navbar-extra">
         <a href="#" id="search-button"><i data-feather="search"></i></a>
-        <a href="#" id="shopping-cart-button"><i data-feather="shopping-cart"></i></a>
+        <a href="#" id="shopping-cart-button"
+          ><i data-feather="shopping-cart"></i
+        ></a>
         <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
       </div>
 
@@ -48,9 +57,9 @@
       <!-- search form end -->
 
       <!-- shopping cart start -->
-       <div class="shopping-cart">
+      <div class="shopping-cart">
         <div class="cart-item">
-          <img src="img/products/1.jpg" alt="Product 1">
+          <img src="img/products/1.jpg" alt="Product 1" />
           <div class="item-detail">
             <h3>Product 1</h3>
             <div class="item-price">IDR 30K</div>
@@ -58,7 +67,7 @@
           <i data-feather="trash-2" class="remove-item"></i>
         </div>
         <div class="cart-item">
-          <img src="img/products/1.jpg" alt="Product 1">
+          <img src="img/products/1.jpg" alt="Product 1" />
           <div class="item-detail">
             <h3>Product 1</h3>
             <div class="item-price">IDR 30K</div>
@@ -66,14 +75,14 @@
           <i data-feather="trash-2" class="remove-item"></i>
         </div>
         <div class="cart-item">
-          <img src="img/products/1.jpg" alt="Product 1">
+          <img src="img/products/1.jpg" alt="Product 1" />
           <div class="item-detail">
             <h3>Product 1</h3>
             <div class="item-price">IDR 30K</div>
           </div>
           <i data-feather="trash-2" class="remove-item"></i>
         </div>
-       </div>
+      </div>
       <!-- shopping cart end -->
     </nav>
     <!-- navbar end -->
@@ -166,13 +175,16 @@
     <section class="products" id="products">
       <h2><span>Product</span> Pintar</h2>
       <p>
-        Kopintar adalah kombinasi kopi dengan aroma kaya dan rasa seimbang untuk menemani ide-ide cemerlangmu
+        Kopintar adalah kombinasi kopi dengan aroma kaya dan rasa seimbang untuk
+        menemani ide-ide cemerlangmu
       </p>
       <div class="row">
         <div class="product-card">
           <div class="product-icons">
             <a href="#"><i data-feather="shopping-cart"></i></a>
-            <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
+            <a href="#" class="item-detail-button"
+              ><i data-feather="eye"></i
+            ></a>
           </div>
           <div class="product-image">
             <img src="img/products/espresso.jpg" alt="Product 1" />
@@ -180,51 +192,11 @@
           <div class="product-content">
             <h3>Coffee Espresso</h3>
             <div class="products-stars">
-            <i data-feather="star" class="star-full"></i>
-            <i data-feather="star" class="star-full"></i>
-            <i data-feather="star" class="star-full"></i>
-            <i data-feather="star" class="star-full"></i>
-            <i data-feather="star"></i>
-            </div>
-          </div>
-          <div class="product-price">IDR 30K <span>IDR 55K</span></div>
-        </div>
-        <div class="product-card">
-          <div class="product-icons">
-            <a href="#"><i data-feather="shopping-cart"></i></a>
-            <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
-          </div>
-          <div class="product-image">
-            <img src="img/products/cappucino.jpg" alt="Product 1" />
-          </div>
-          <div class="product-content">
-            <h3>Coffee Cappucino</h3>
-            <div class="products-stars">
-            <i data-feather="star" class="star-full"></i>
-            <i data-feather="star" class="star-full"></i>
-            <i data-feather="star" class="star-full"></i>
-            <i data-feather="star"></i>
-            <i data-feather="star"></i>
-            </div>
-          </div>
-          <div class="product-price">IDR 30K <span>IDR 55K</span></div>
-        </div>
-        <div class="product-card">
-          <div class="product-icons">
-            <a href="#"><i data-feather="shopping-cart"></i></a>
-            <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
-          </div>
-          <div class="product-image">
-            <img src="img/products/mocha.jpg" alt="Product 1" />
-          </div>
-          <div class="product-content">
-            <h3>Coffee Mocha</h3>
-            <div class="products-stars">
-            <i data-feather="star" class="star-full"></i>
-            <i data-feather="star" class="star-full"></i>
-            <i data-feather="star" class="star-full"></i>
-            <i data-feather="star" class="star-full"></i>
-            <i data-feather="star"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star"></i>
             </div>
           </div>
           <div class="product-price">IDR 30K <span>IDR 55K</span></div>
@@ -300,30 +272,36 @@
     <!-- footer end -->
 
     <!-- modal box item detail start -->
-     <!-- modal box 1 start -->
-     <div class="modal" id="item-detail-modal">
+    <!-- modal box 1 -->
+    <div class="modal" id="item-detail-modal">
       <div class="modal-container">
         <a href="#" class="close-icon"><i data-feather="x"></i></a>
         <div class="modal-content">
-          <img src="img/products/espresso.jpg" alt="Espresso">
+          <img src="img/products/espresso.jpg" alt="Espresso" />
           <div class="product-content">
             <h3>Coffee Espresso</h3>
-            <p>Espresso adalah jenis kopi pekat yang dibuat dengan cara mengekstrak air panas bertekanan tinggi melalui bubuk kopi yang sangat halus. Proses ini menghasilkan minuman kecil dengan rasa kuat, aroma tajam, dan lapisan cream di atasnya.</p>
+            <p>
+              Espresso adalah jenis kopi pekat yang dibuat dengan cara
+              mengekstrak air panas bertekanan tinggi melalui bubuk kopi yang
+              sangat halus. Proses ini menghasilkan minuman kecil dengan rasa
+              kuat, aroma tajam, dan lapisan cream di atasnya.
+            </p>
             <div class="products-stars">
               <i data-feather="star" class="star-full"></i>
               <i data-feather="star" class="star-full"></i>
               <i data-feather="star" class="star-full"></i>
               <i data-feather="star" class="star-full"></i>
-              <i data-feather="star"></i>
+              <i data-feather="star" class="star-full"></i>
             </div>
             <div></div>
             <div class="product-price">IDR 30K <span>IDR 55K</span></div>
-            <a href="#"><i data-feather="shopping-cart"></i> <span>add to cart</span></a>
+            <a href="#"
+              ><i data-feather="shopping-cart"></i> <span>add to cart</span></a
+            >
           </div>
         </div>
       </div>
-     </div>
-     <!-- modal box 1 end -->
+    </div>
     <!-- modal box item detail end -->
 
     <!-- feather icons -->
